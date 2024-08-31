@@ -13,7 +13,7 @@ With this extension, you can:
 - Offer to connect users to a Wi-Fi network
 - Share contact information cards
 
-Inspired by Niko's **[Voiceflow Extensions Starter Repo](https://github.com/voiceflow-gallaga)**. Full documentation available **[here](https://docs.voiceflow.com/docs/custom-web-chat-widgets)**.
+Inspired by Niko's **[Voiceflow Extensions Starter Repo](https://github.com/voiceflow-gallagan/vf-extensions-demo)**. Full documentation available **[here](https://docs.voiceflow.com/docs/custom-web-chat-widgets)**. QR Code generation handled by Denys Kozak's **[qr-code-styling library](https://github.com/kozakdenys/qr-code-styling)**
 
 ## Quickstart
 
@@ -44,7 +44,7 @@ cd voiceflow-qrcode
 
 ### 4. Grab your Voiceflow Project Key (not your API key!!)
 
-Open **[index.html](./index.html)** and replace the placeholder with your Voiceflow project ID:
+Open **[config.js](./config.js)** and replace the placeholder with your Voiceflow project ID:
 
 ```javascript
 const projectID = "__REPLACE__ME__";
@@ -55,19 +55,23 @@ const projectID = "__REPLACE__ME__";
 If you have node installed, run the following command from the project directory:
 
 ```
-npx -y serve -p 1337
+npm run dev
+
+# or run: npx -y http-server -p 1337
 ```
 
 The project will be served at http://localhost:1337.
 
 Navigate to http://localhost:1337 in your web browser to go through the flow.
 
-You can serve this directory however you prefer, but an easy option is using NodeJs:
+<details>
+  <summary>Seeing errors?</summary>
+
+You can serve this directory however you prefer, one easy option is NodeJS
 
 Option 1: Download and Install from the [official website](https://nodejs.org/en/download)
 
-<details>
-  <summary>Option 2: Install Using Volta</summary>
+Option 2: Install Using Volta
 
 If you prefer to use [Volta](https://docs.volta.sh/guide/) to manage your Node.js installations, follow these steps:
 
@@ -82,6 +86,12 @@ If you prefer to use [Volta](https://docs.volta.sh/guide/) to manage your Node.j
    ```bash
    volta install node
    ```
+
+Or serve with Python, ex
+
+```sh
+python3 -m http.server 1337
+```
 
 </details>
 

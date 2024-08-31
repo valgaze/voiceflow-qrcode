@@ -29,24 +29,37 @@
         background: #fff;
         border-radius: 10px;
       }
+      .repo-link {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .repo-link:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
     <h1>Tap the chat button in the bottom right corner to get started</h1>
+    <a
+      href="https://github.com/valgaze/voiceflow-qrcode?tab=readme-ov-file#voiceflow-qr-code-extension"
+      class="repo-link"
+      target="_blank"
+      >🔗 View the Codebase</a
+    >
+
     <script type="module">
-      import { checkProjectID, QRCodeExtension } from "/index.js";
-
-
-      
-      // 🚨 IMPORTANT: Replace the text "__REPLACE__ME__" with your actual project ID (find the project ID inside settings on the VF canvas)
-      const projectID = "__REPLACE__ME__";
-
-
-
+      import { checkProjectID, QRCodeExtension } from "./index.js";
+      // 🚨 IMPORTANT: Replace the text "__REPLACE__ME__" with your actual project ID in config.js (you cna find the project ID inside settings on the VF canvas)
+      import { projectID } from "./config.js";
 
       (function (d, t) {
         checkProjectID(projectID, window.document);
-
         var v = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
         v.onload = function () {

@@ -89,7 +89,7 @@
               "slots": []
             }
           ],
-          "noteID": "v111sh0rd0",
+          "noteID": "8zpm00fn8",
           "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
         },
         {
@@ -138,7 +138,7 @@
               "slots": []
             }
           ],
-          "noteID": "v111si0rww",
+          "noteID": "8zpm10fdc",
           "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
         },
         {
@@ -176,6 +176,27 @@
     },
     "programResources": {
       "messages": {
+        "66d11575a0ae310266c19dab": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What is your machine’s local IP address? (e.g., http://192.168.1.19:1337)"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
         "66cebe9dea920600071cc1d8": {
           "variants": {
             "default:en-us": [
@@ -416,27 +437,6 @@
             ]
           }
         },
-        "66cebf8c51873fe8cbca106a": {
-          "variants": {
-            "default:en-us": [
-              {
-                "data": {
-                  "text": [
-                    {
-                      "children": [
-                        {
-                          "text": "This implementation does not \"stop\" the conversation or report when a user accesses a QR code—but that capability could be implemented if needed with some additional infrastructure\n\n"
-                        }
-                      ]
-                    }
-                  ],
-                  "delay": null
-                },
-                "condition": null
-              }
-            ]
-          }
-        },
         "66cebfba51873fe8cbca1075": {
           "variants": {
             "default:en-us": [
@@ -446,7 +446,7 @@
                     {
                       "children": [
                         {
-                          "text": "Pick a demo below and open it on your phone.\n\n"
+                          "text": "Pick a QR demo below and open it on your phone\n\n "
                         }
                       ]
                     }
@@ -458,7 +458,7 @@
             ]
           }
         },
-        "66cec00351873fe8cbca10b1": {
+        "66d29e60522c72d791325d23": {
           "variants": {
             "default:en-us": [
               {
@@ -467,7 +467,177 @@
                     {
                       "children": [
                         {
-                          "text": "You ran the demo with contact card QR code, good job!"
+                          "text": "You ran the scan demo and here is the data "
+                        },
+                        {
+                          "text": "{item}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d29e60522c72d791325d26": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "QR Code OnScan"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2aa7b522c72d791325d3c": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "We \"stopped\" the conversation waiting for that scan to complete and now it completed"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2aabdc8fe0d24d529e79b": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "[debug] "
+                        },
+                        {
+                          "text": "{last_utterance}"
+                        },
+                        {
+                          "text": " /"
+                        },
+                        {
+                          "text": "{user_id}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2ac2cc8fe0d24d529e885": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "underline": true,
+                          "fontWeight": "700",
+                          "text": "⚠️ Warning: "
+                        },
+                        {
+                          "text": "The \"onScan\" sample may not work, and your phone must be on the same Wi-Fi network as your machine. Do you still want to continue?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2b96ec8fe0d24d529edd4": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "You ran the QR code sample!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2ba40c8fe0d24d529ee69": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "default"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66d2bab4c8fe0d24d529eeb6": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "booo"
                         }
                       ]
                     }
@@ -519,10 +689,17 @@
           "66cebe9dea920600071cc1ea",
           "66cebe9dea920600071cc1ed",
           "66cebe9dea920600071cc1f0",
-          "66cebf1151873fe8cbca1035",
-          "66cebf8c51873fe8cbca106a",
           "66cebfba51873fe8cbca1075",
-          "66cec00351873fe8cbca10b1"
+          "66d11575a0ae310266c19dab",
+          "66cebf1151873fe8cbca1035",
+          "66d29e60522c72d791325d23",
+          "66d29e60522c72d791325d26",
+          "66d2aa7b522c72d791325d3c",
+          "66d2aabdc8fe0d24d529e79b",
+          "66d2ac2cc8fe0d24d529e885",
+          "66d2b96ec8fe0d24d529edd4",
+          "66d2ba40c8fe0d24d529ee69",
+          "66d2bab4c8fe0d24d529eeb6"
         ],
         "slotsMap": {},
         "platform": "webchat",
@@ -536,6 +713,12 @@
         "usedIntentsSet": [],
         "goToIntentsSet": [],
         "cmsVariables": {
+          "item": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
           "sessions": {
             "isSystem": true,
             "defaultValue": null
@@ -603,10 +786,11 @@
       "last_event",
       "last_utterance",
       "vf_memory",
-      "hasVisited"
+      "hasVisited",
+      "item"
     ],
     "_id": "66cebe9d51873fe8cbca0ff3",
-    "updatedAt": "2024-08-29T02:02:12.158Z",
+    "updatedAt": "2024-08-31T06:39:52.307Z",
     "domains": [
       {
         "id": "cla06iyr900b206pkh8d4ap8n",
@@ -620,7 +804,7 @@
         "updatedAt": "2024-08-28T06:07:25.428Z"
       }
     ],
-    "projectID": "66cebe9d51873fe8cbca0ff2",
+    "projectID": "12345678910112",
     "rootDiagramID": "64386e21bb106b044ea34b78",
     "templateDiagramID": "643872531e80120007759e05"
   },
@@ -1518,23 +1702,15 @@
                     "points": [
                       {
                         "point": [
-                          -859.94,
-                          -1473.87
+                          -1428.21,
+                          -835.79
                         ]
                       },
                       {
                         "point": [
-                          -797.2,
-                          -1473.87
+                          -1032.2,
+                          -838.81
                         ]
-                      },
-                      {
-                        "point": [
-                          -797.2,
-                          -1320.81
-                        ],
-                        "toTop": true,
-                        "allowedToTop": true
                       }
                     ]
                   }
@@ -1546,8 +1722,8 @@
           },
           "nodeID": "start00000000000000000000",
           "coords": [
-            -924.5630174235313,
-            -1495.8622866983526
+            -1494.0822481927598,
+            -860.2853636214302
           ]
         },
         "66cebea6cee239664f2adf6c": {
@@ -1562,43 +1738,24 @@
           },
           "nodeID": "66cebea6cee239664f2adf6c",
           "coords": [
-            -117.88982146790946,
-            -837.8489155739064
+            -335.8705906986792,
+            -753.9066078815993
           ]
         },
         "66cebea6cee239664f2adf6e": {
           "type": "block",
           "data": {
             "name": "Basic QR Code Example",
-            "color": "",
+            "color": "#CB627B",
             "steps": [
               "66cebea6cee239664f2adf7a"
             ]
           },
           "nodeID": "66cebea6cee239664f2adf6e",
           "coords": [
-            551.9965421684542,
-            -891.5989155739064
+            312.56472398663607,
+            -816.8261883011792
           ]
-        },
-        "66cebea6cee239664f2adf72": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cebf1151873fe8cbca1035",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66cebea6cee239664f2adf73"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cebea6cee239664f2adf72"
         },
         "66cebea6cee239664f2adf75": {
           "type": "buttons",
@@ -1629,6 +1786,11 @@
                 "id": "8huh3gzz",
                 "name": "👤 Contact Info QR Code",
                 "actions": []
+              },
+              {
+                "id": "si8z3mls",
+                "name": "🚨 Alert when scanned",
+                "actions": []
               }
             ],
             "intentScope": "GLOBAL",
@@ -1656,26 +1818,26 @@
                     "points": [
                       {
                         "point": [
-                          48.61,
-                          -680.62
+                          -169.37,
+                          -593.68
                         ]
                       },
                       {
                         "point": [
-                          217.81,
-                          -680.62
+                          -10.9,
+                          -593.68
                         ]
                       },
                       {
                         "point": [
-                          217.81,
-                          -864.6
+                          -10.9,
+                          -789.83
                         ]
                       },
                       {
                         "point": [
-                          387,
-                          -864.6
+                          147.56,
+                          -789.83
                         ],
                         "allowedToTop": true
                       }
@@ -1690,15 +1852,28 @@
                     "points": [
                       {
                         "point": [
-                          48.61,
-                          -626.37
+                          -169.37,
+                          -539.43
                         ]
                       },
                       {
                         "point": [
-                          381.37,
-                          -622.3
+                          -9.72,
+                          -539.43
                         ]
+                      },
+                      {
+                        "point": [
+                          -9.72,
+                          -610.09
+                        ]
+                      },
+                      {
+                        "point": [
+                          149.93,
+                          -610.09
+                        ],
+                        "allowedToTop": true
                       }
                     ]
                   }
@@ -1711,26 +1886,26 @@
                     "points": [
                       {
                         "point": [
-                          48.61,
-                          -562.38
+                          -169.37,
+                          -475.43
                         ]
                       },
                       {
                         "point": [
-                          368.84,
-                          -562.38
+                          -6.99,
+                          -475.43
                         ]
                       },
                       {
                         "point": [
-                          368.84,
-                          -305.11
+                          -6.99,
+                          -431.22
                         ]
                       },
                       {
                         "point": [
-                          689.07,
-                          -305.11
+                          155.39,
+                          -431.22
                         ],
                         "allowedToTop": true
                       }
@@ -1745,26 +1920,26 @@
                     "points": [
                       {
                         "point": [
-                          48.61,
-                          -498.38
+                          -169.37,
+                          -411.44
                         ]
                       },
                       {
                         "point": [
-                          354.66,
-                          -498.38
+                          -6.98,
+                          -411.44
                         ]
                       },
                       {
                         "point": [
-                          354.66,
-                          -52.26
+                          -6.98,
+                          -249.14
                         ]
                       },
                       {
                         "point": [
-                          660.7,
-                          -52.26
+                          155.41,
+                          -249.14
                         ],
                         "allowedToTop": true
                       }
@@ -1779,28 +1954,51 @@
                     "points": [
                       {
                         "point": [
-                          48.61,
-                          -444.38
+                          -169.37,
+                          -357.44
                         ]
                       },
                       {
                         "point": [
-                          331.35,
-                          -444.38
+                          -5.92,
+                          -357.44
                         ]
                       },
                       {
                         "point": [
-                          331.35,
-                          234.69
+                          -5.92,
+                          -61.56
                         ]
                       },
                       {
                         "point": [
-                          614.08,
-                          234.69
+                          157.54,
+                          -61.56
                         ],
                         "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "66d1103cce9b95a019a07bae",
+                  "type": "",
+                  "target": "66d2ac2050160441053a0f97",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -502.37,
+                          -306.44
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -1355.34,
+                          -303.26
+                        ],
+                        "reversed": true
                       }
                     ]
                   }
@@ -1845,15 +2043,28 @@
                     "points": [
                       {
                         "point": [
-                          718.5,
-                          -757.62
+                          479.07,
+                          -682.85
                         ]
                       },
                       {
                         "point": [
-                          807,
-                          -754.6
+                          577.58,
+                          -682.85
                         ]
+                      },
+                      {
+                        "point": [
+                          577.58,
+                          -411.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          676.09,
+                          -411.38
+                        ],
+                        "allowedToTop": true
                       }
                     ]
                   }
@@ -1862,50 +2073,6 @@
             }
           },
           "nodeID": "66cebea6cee239664f2adf7a"
-        },
-        "66cebf8c142f5f78b5cd791f": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cebf8c51873fe8cbca106a",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": "66cebea6cee239664f2adf6c",
-                  "id": "66cebf8c142f5f78b5cd7920",
-                  "data": {
-                    "points": [
-                      {
-                        "point": [
-                          -7.64,
-                          -1349.78
-                        ],
-                        "reversed": true
-                      },
-                      {
-                        "point": [
-                          -117.89,
-                          -1349.78
-                        ]
-                      },
-                      {
-                        "point": [
-                          -117.89,
-                          -837.85
-                        ],
-                        "toTop": true,
-                        "allowedToTop": true
-                      }
-                    ]
-                  }
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cebf8c142f5f78b5cd791f"
         },
         "66cebfba142f5f78b5cd7923": {
           "type": "message",
@@ -1924,7 +2091,11 @@
               "dynamic": []
             }
           },
-          "nodeID": "66cebfba142f5f78b5cd7923"
+          "nodeID": "66cebfba142f5f78b5cd7923",
+          "coords": [
+            0,
+            0
+          ]
         },
         "66cebea6cee239664f2adf70": {
           "type": "block",
@@ -1932,34 +2103,15 @@
             "name": "Offroad Step",
             "color": "",
             "steps": [
-              "66cebea6cee239664f2adf7d",
+              "66d2b96e50160441053a106d",
               "66cec1e7142f5f78b5cd7942"
             ]
           },
           "nodeID": "66cebea6cee239664f2adf70",
           "coords": [
-            971.9965516679445,
-            -781.5989155739064
+            841.0874607588464,
+            -438.38213235712374
           ]
-        },
-        "66cebea6cee239664f2adf7d": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cec00351873fe8cbca10b1",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66cebea6cee239664f2adf7e"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cebea6cee239664f2adf7d"
         },
         "66cec1e7142f5f78b5cd7942": {
           "type": "buttons",
@@ -2033,45 +2185,15 @@
           "type": "block",
           "data": {
             "name": "Phone QR Code Example",
-            "color": "",
+            "color": "#CB627B",
             "steps": [
               "66cecb63142f5f78b5cd796f"
             ]
           },
           "nodeID": "66cecb63142f5f78b5cd7969",
           "coords": [
-            546.3715496004083,
-            -649.3006070599604
-          ]
-        },
-        "66cecb63142f5f78b5cd796b": {
-          "type": "block",
-          "data": {
-            "name": "Offroad Step",
-            "color": "",
-            "steps": [
-              "66cecb63142f5f78b5cd7972",
-              "66cecb63142f5f78b5cd7975"
-            ]
-          },
-          "nodeID": "66cecb63142f5f78b5cd796b",
-          "coords": [
-            968.8715590998986,
-            -546.8006070599604
-          ]
-        },
-        "66cecb63142f5f78b5cd796d": {
-          "type": "actions",
-          "data": {
-            "name": "Actions",
-            "steps": [
-              "66cecb63142f5f78b5cd7979"
-            ]
-          },
-          "nodeID": "66cecb63142f5f78b5cd796d",
-          "coords": [
-            154.37500743195415,
-            766.048308513946
+            314.9292419081006,
+            -637.0890685984218
           ]
         },
         "66cecb63142f5f78b5cd796f": {
@@ -2099,21 +2221,34 @@
               "dynamic": [
                 {
                   "type": "",
-                  "target": "66cecb63142f5f78b5cd796b",
+                  "target": "66cebea6cee239664f2adf70",
                   "id": "66cecb63142f5f78b5cd7970",
                   "data": {
                     "points": [
                       {
                         "point": [
-                          712.88,
-                          -515.32
+                          481.43,
+                          -503.11
                         ]
                       },
                       {
                         "point": [
-                          803.87,
-                          -519.8
+                          578.76,
+                          -503.11
                         ]
+                      },
+                      {
+                        "point": [
+                          578.76,
+                          -411.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          676.09,
+                          -411.38
+                        ],
+                        "allowedToTop": true
                       }
                     ]
                   }
@@ -2123,122 +2258,19 @@
           },
           "nodeID": "66cecb63142f5f78b5cd796f"
         },
-        "66cecb63142f5f78b5cd7972": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cec00351873fe8cbca10b1",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66cecb63142f5f78b5cd7973"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cecb63142f5f78b5cd7972"
-        },
-        "66cecb63142f5f78b5cd7975": {
-          "type": "buttons",
-          "data": {
-            "name": "Buttons",
-            "buttons": [
-              {
-                "id": "w5b03nda",
-                "name": "🔄 Start over",
-                "actions": [],
-                "intent": null
-              }
-            ],
-            "intentScope": "GLOBAL",
-            "noMatch": {
-              "types": [],
-              "pathName": "No match",
-              "randomize": false,
-              "reprompts": []
-            },
-            "noReply": null,
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {
-                "else": {
-                  "type": "else",
-                  "target": null,
-                  "id": "66cecb63142f5f78b5cd7976"
-                }
-              },
-              "dynamic": [
-                {
-                  "type": "",
-                  "target": "66cecb63142f5f78b5cd796d",
-                  "id": "66cecb63142f5f78b5cd7977"
-                }
-              ]
-            }
-          },
-          "nodeID": "66cecb63142f5f78b5cd7975"
-        },
-        "66cecb63142f5f78b5cd7979": {
-          "type": "goToNode",
-          "data": {
-            "name": "",
-            "nodeID": "start00000000000000000000",
-            "diagramID": "64386e21bb106b044ea34b78",
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cecb63142f5f78b5cd7979"
-        },
         "66cecfe4142f5f78b5cd7990": {
           "type": "block",
           "data": {
             "name": "QR Code with Query Params",
-            "color": "",
+            "color": "#CB627B",
             "steps": [
               "66cecfe4142f5f78b5cd7996"
             ]
           },
           "nodeID": "66cecfe4142f5f78b5cd7990",
           "coords": [
-            854.0746136581479,
-            -332.11311488307
-          ]
-        },
-        "66cecfe4142f5f78b5cd7992": {
-          "type": "block",
-          "data": {
-            "name": "Offroad Step",
-            "color": "",
-            "steps": [
-              "66cecfe4142f5f78b5cd7999",
-              "66cecfe4142f5f78b5cd799c"
-            ]
-          },
-          "nodeID": "66cecfe4142f5f78b5cd7992",
-          "coords": [
-            1317.8246231576381,
-            -229.61311488307
-          ]
-        },
-        "66cecfe4142f5f78b5cd7994": {
-          "type": "actions",
-          "data": {
-            "name": "Actions",
-            "steps": [
-              "66cecfe4142f5f78b5cd79a0"
-            ]
-          },
-          "nodeID": "66cecfe4142f5f78b5cd7994",
-          "coords": [
-            33.328071489693684,
-            833.2358006908364
+            320.3945437280779,
+            -458.2232547432102
           ]
         },
         "66cecfe4142f5f78b5cd7996": {
@@ -2266,21 +2298,34 @@
               "dynamic": [
                 {
                   "type": "",
-                  "target": "66cecfe4142f5f78b5cd7992",
+                  "target": "66cec1e7142f5f78b5cd7942",
                   "id": "66cecfe4142f5f78b5cd7997",
                   "data": {
                     "points": [
                       {
                         "point": [
-                          1020.58,
-                          -198.13
+                          486.9,
+                          -324.24
                         ]
                       },
                       {
                         "point": [
-                          1152.82,
-                          -202.61
+                          580.74,
+                          -324.24
                         ]
+                      },
+                      {
+                        "point": [
+                          580.74,
+                          -299.89
+                        ]
+                      },
+                      {
+                        "point": [
+                          674.58,
+                          -299.89
+                        ],
+                        "allowedToTop": false
                       }
                     ]
                   }
@@ -2289,79 +2334,6 @@
             }
           },
           "nodeID": "66cecfe4142f5f78b5cd7996"
-        },
-        "66cecfe4142f5f78b5cd7999": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cec00351873fe8cbca10b1",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66cecfe4142f5f78b5cd799a"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cecfe4142f5f78b5cd7999"
-        },
-        "66cecfe4142f5f78b5cd799c": {
-          "type": "buttons",
-          "data": {
-            "name": "Buttons",
-            "buttons": [
-              {
-                "id": "w5b03nda",
-                "name": "🔄 Start over",
-                "actions": [],
-                "intent": null
-              }
-            ],
-            "intentScope": "GLOBAL",
-            "noMatch": {
-              "types": [],
-              "pathName": "No match",
-              "randomize": false,
-              "reprompts": []
-            },
-            "noReply": null,
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {
-                "else": {
-                  "type": "else",
-                  "target": null,
-                  "id": "66cecfe4142f5f78b5cd799d"
-                }
-              },
-              "dynamic": [
-                {
-                  "type": "",
-                  "target": "66cecfe4142f5f78b5cd7994",
-                  "id": "66cecfe4142f5f78b5cd799e"
-                }
-              ]
-            }
-          },
-          "nodeID": "66cecfe4142f5f78b5cd799c"
-        },
-        "66cecfe4142f5f78b5cd79a0": {
-          "type": "goToNode",
-          "data": {
-            "name": "",
-            "nodeID": "start00000000000000000000",
-            "diagramID": "64386e21bb106b044ea34b78",
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cecfe4142f5f78b5cd79a0"
         },
         "66ced2fc1dbb46e5bbf96d2b": {
           "type": "markup_image",
@@ -2373,8 +2345,8 @@
           },
           "nodeID": "66ced2fc1dbb46e5bbf96d2b",
           "coords": [
-            2010.6978834143692,
-            -1570.144044191454
+            87.41866263514976,
+            646.1871246397143
           ]
         },
         "66ced3091dbb46e5bbf96d2e": {
@@ -2403,53 +2375,23 @@
           },
           "nodeID": "66ced3091dbb46e5bbf96d2e",
           "coords": [
-            1234.3228804527635,
-            -1825.769028768752
+            -299.7255710956889,
+            144.40829390857158
           ]
         },
         "66ced3481dbb46e5bbf96d32": {
           "type": "block",
           "data": {
             "name": "WiFi QR Code",
-            "color": "",
+            "color": "#CB627B",
             "steps": [
               "66ced3481dbb46e5bbf96d38"
             ]
           },
           "nodeID": "66ced3481dbb46e5bbf96d32",
           "coords": [
-            825.6978783852272,
-            -79.26061951438228
-          ]
-        },
-        "66ced3481dbb46e5bbf96d34": {
-          "type": "block",
-          "data": {
-            "name": "Offroad Step",
-            "color": "",
-            "steps": [
-              "66ced3481dbb46e5bbf96d3b",
-              "66ced3481dbb46e5bbf96d3e"
-            ]
-          },
-          "nodeID": "66ced3481dbb46e5bbf96d34",
-          "coords": [
-            1294.4478878847176,
-            29.489380485617716
-          ]
-        },
-        "66ced3481dbb46e5bbf96d36": {
-          "type": "actions",
-          "data": {
-            "name": "Actions",
-            "steps": [
-              "66ced3481dbb46e5bbf96d41"
-            ]
-          },
-          "nodeID": "66ced3481dbb46e5bbf96d36",
-          "coords": [
-            -288.79866378322697,
-            1057.3382960595243
+            320.4094168467657,
+            -276.139990143753
           ]
         },
         "66ced3481dbb46e5bbf96d38": {
@@ -2477,21 +2419,34 @@
               "dynamic": [
                 {
                   "type": "",
-                  "target": "66ced3481dbb46e5bbf96d34",
+                  "target": "66cec1e7142f5f78b5cd7942",
                   "id": "66ced3481dbb46e5bbf96d39",
                   "data": {
                     "points": [
                       {
                         "point": [
-                          992.2,
-                          54.72
+                          486.91,
+                          -142.16
                         ]
                       },
                       {
                         "point": [
-                          1129.45,
-                          56.49
+                          580.75,
+                          -142.16
                         ]
+                      },
+                      {
+                        "point": [
+                          580.75,
+                          -299.89
+                        ]
+                      },
+                      {
+                        "point": [
+                          674.58,
+                          -299.89
+                        ],
+                        "allowedToTop": false
                       }
                     ]
                   }
@@ -2501,182 +2456,20 @@
           },
           "nodeID": "66ced3481dbb46e5bbf96d38"
         },
-        "66ced3481dbb46e5bbf96d3b": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cec00351873fe8cbca10b1",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66ced3481dbb46e5bbf96d3c"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66ced3481dbb46e5bbf96d3b"
-        },
-        "66ced3481dbb46e5bbf96d3e": {
-          "type": "buttons",
-          "data": {
-            "name": "Buttons",
-            "buttons": [
-              {
-                "id": "w5b03nda",
-                "name": "🔄 Start over",
-                "actions": [],
-                "intent": null
-              }
-            ],
-            "intentScope": "GLOBAL",
-            "noMatch": {
-              "types": [],
-              "pathName": "No match",
-              "randomize": false,
-              "reprompts": []
-            },
-            "noReply": null,
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {
-                "else": {
-                  "type": "else",
-                  "target": null,
-                  "id": "66ced3481dbb46e5bbf96d3f"
-                }
-              },
-              "dynamic": [
-                {
-                  "type": "",
-                  "target": "66ced3481dbb46e5bbf96d36",
-                  "id": "66ced3481dbb46e5bbf96d40"
-                }
-              ]
-            }
-          },
-          "nodeID": "66ced3481dbb46e5bbf96d3e"
-        },
-        "66ced3481dbb46e5bbf96d41": {
-          "type": "goToNode",
-          "data": {
-            "name": "",
-            "nodeID": "start00000000000000000000",
-            "diagramID": "64386e21bb106b044ea34b78",
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66ced3481dbb46e5bbf96d41"
-        },
-        "66cedb261dbb46e5bbf96d83": {
-          "type": "block",
-          "data": {
-            "name": "Offroad Step",
-            "color": "",
-            "steps": [
-              "66cedb261dbb46e5bbf96d89",
-              "66cedb261dbb46e5bbf96d8c"
-            ]
-          },
-          "nodeID": "66cedb261dbb46e5bbf96d83",
-          "coords": [
-            1261.583622617853,
-            311.44373797077697
-          ]
-        },
         "66cedb261dbb46e5bbf96d85": {
           "type": "block",
           "data": {
             "name": "Contact Card QR Code",
-            "color": "",
+            "color": "#CB627B",
             "steps": [
               "66cedb261dbb46e5bbf96d90"
             ]
           },
           "nodeID": "66cedb261dbb46e5bbf96d85",
           "coords": [
-            779.0836131183626,
-            207.69373797077702
+            322.5364103211598,
+            -88.55626202922286
           ]
-        },
-        "66cedb261dbb46e5bbf96d87": {
-          "type": "actions",
-          "data": {
-            "name": "Actions",
-            "steps": [
-              "66cedb261dbb46e5bbf96d92"
-            ]
-          },
-          "nodeID": "66cedb261dbb46e5bbf96d87",
-          "coords": [
-            -716.6629290500915,
-            1579.2926535446836
-          ]
-        },
-        "66cedb261dbb46e5bbf96d89": {
-          "type": "message",
-          "data": {
-            "name": "",
-            "messageID": "66cec00351873fe8cbca10b1",
-            "portsV2": {
-              "byKey": {
-                "next": {
-                  "type": "next",
-                  "target": null,
-                  "id": "66cedb261dbb46e5bbf96d8a"
-                }
-              },
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cedb261dbb46e5bbf96d89"
-        },
-        "66cedb261dbb46e5bbf96d8c": {
-          "type": "buttons",
-          "data": {
-            "name": "Buttons",
-            "buttons": [
-              {
-                "id": "w5b03nda",
-                "name": "🔄 Start over",
-                "actions": [],
-                "intent": null
-              }
-            ],
-            "intentScope": "GLOBAL",
-            "noMatch": {
-              "types": [],
-              "pathName": "No match",
-              "randomize": false,
-              "reprompts": []
-            },
-            "noReply": null,
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {
-                "else": {
-                  "type": "else",
-                  "target": null,
-                  "id": "66cedb261dbb46e5bbf96d8d"
-                }
-              },
-              "dynamic": [
-                {
-                  "type": "",
-                  "target": "66cedb261dbb46e5bbf96d87",
-                  "id": "66cedb261dbb46e5bbf96d8e"
-                }
-              ]
-            }
-          },
-          "nodeID": "66cedb261dbb46e5bbf96d8c"
         },
         "66cedb261dbb46e5bbf96d90": {
           "type": "trace",
@@ -2703,21 +2496,34 @@
               "dynamic": [
                 {
                   "type": "",
-                  "target": "66cedb261dbb46e5bbf96d83",
+                  "target": "66cebea6cee239664f2adf70",
                   "id": "66cedb261dbb46e5bbf96d91",
                   "data": {
                     "points": [
                       {
                         "point": [
-                          945.59,
-                          341.67
+                          489.04,
+                          45.42
                         ]
                       },
                       {
                         "point": [
-                          1096.58,
-                          338.44
+                          582.56,
+                          45.42
                         ]
+                      },
+                      {
+                        "point": [
+                          582.56,
+                          -411.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          676.09,
+                          -411.38
+                        ],
+                        "allowedToTop": true
                       }
                     ]
                   }
@@ -2726,20 +2532,6 @@
             }
           },
           "nodeID": "66cedb261dbb46e5bbf96d90"
-        },
-        "66cedb261dbb46e5bbf96d92": {
-          "type": "goToNode",
-          "data": {
-            "name": "",
-            "nodeID": "start00000000000000000000",
-            "diagramID": "64386e21bb106b044ea34b78",
-            "portsV2": {
-              "byKey": {},
-              "builtIn": {},
-              "dynamic": []
-            }
-          },
-          "nodeID": "66cedb261dbb46e5bbf96d92"
         },
         "66cfd4eca55898255870b5d6": {
           "type": "ifV2",
@@ -2814,38 +2606,26 @@
                     "points": [
                       {
                         "point": [
-                          -630.7,
-                          -1242.07
+                          -700.7,
+                          -787.07
                         ]
                       },
                       {
                         "point": [
-                          -606.7,
-                          -1242.07
+                          -599.33,
+                          -787.07
                         ]
                       },
                       {
                         "point": [
-                          -606.7,
-                          -1327.29
+                          -599.33,
+                          -1238.38
                         ]
                       },
                       {
                         "point": [
-                          -607.64,
-                          -1327.29
-                        ]
-                      },
-                      {
-                        "point": [
-                          -607.64,
-                          -1412.51
-                        ]
-                      },
-                      {
-                        "point": [
-                          -583.64,
-                          -1412.51
+                          -497.97,
+                          -1238.38
                         ],
                         "allowedToTop": true
                       }
@@ -2856,7 +2636,22 @@
                   "id": "66cfd547a55898255870b5e0",
                   "type": "",
                   "target": "66cebea6cee239664f2adf6c",
-                  "data": {}
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -700.7,
+                          -732.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          -500.87,
+                          -726.91
+                        ]
+                      }
+                    ]
+                  }
                 },
                 {
                   "id": "66cfd550a55898255870b5e2",
@@ -2879,8 +2674,8 @@
           },
           "nodeID": "66cfd4eca55898255870b5d9",
           "coords": [
-            -797.200973809445,
-            -1320.812573882946
+            -867.200973809445,
+            -865.812573882946
           ]
         },
         "66cfd5caa55898255870b5e4": {
@@ -2888,15 +2683,14 @@
           "data": {
             "name": "Greeting",
             "steps": [
-              "66cebea6cee239664f2adf72",
-              "66cebf8c142f5f78b5cd791f"
+              "66cebea6cee239664f2adf72"
             ],
             "color": ""
           },
           "nodeID": "66cfd5caa55898255870b5e4",
           "coords": [
-            158.86414244346102,
-            -1594.505757895661
+            -313.86313028381187,
+            -1032.1281355180392
           ]
         },
         "66cfd601a55898255870b5f0": {
@@ -2923,27 +2717,34 @@
                     "points": [
                       {
                         "point": [
-                          -252.13,
-                          -1360.77
+                          -166.47,
+                          -1186.64
                         ]
                       },
                       {
                         "point": [
-                          -129.13,
-                          -1360.77
+                          -142.47,
+                          -1186.64
                         ]
                       },
                       {
                         "point": [
-                          -129.13,
-                          -1567.51
+                          -142.47,
+                          -1109.38
                         ]
                       },
                       {
                         "point": [
-                          -6.14,
-                          -1567.51
+                          -313.86,
+                          -1109.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          -313.86,
+                          -1032.13
                         ],
+                        "toTop": true,
                         "allowedToTop": true
                       }
                     ]
@@ -2966,13 +2767,801 @@
           },
           "nodeID": "66cfd601a55898255870b5f2",
           "coords": [
-            -418.6358477217726,
-            -1439.5057670598753
+            -332.97151205743705,
+            -1265.3798929340014
+          ]
+        },
+        "66d115696477349bb7919ecd": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d115696477349bb7919ece"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "66d11575a0ae310266c19dab"
+          },
+          "nodeID": "66d115696477349bb7919ecd"
+        },
+        "66d115696477349bb7919ecf": {
+          "type": "block",
+          "data": {
+            "name": "Request",
+            "steps": [
+              "66d115696477349bb7919ecd",
+              "66d115a06477349bb7919ed6"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d115696477349bb7919ecf",
+          "coords": [
+            -1126.7565864842934,
+            -167.8824981229078
+          ]
+        },
+        "66d115a06477349bb7919ed6": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d2ba2150160441053a1074",
+                  "id": "66d115a06477349bb7919ed7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -960.25,
+                          18.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          -936.25,
+                          18.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          -936.25,
+                          97.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1103.01,
+                          97.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1103.01,
+                          175.43
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66d115a06477349bb7919ed8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d115a06477349bb7919ed6",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66cebea6cee239664f2adf72": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66cebf1151873fe8cbca1035",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "",
+                  "target": "66cebea6cee239664f2adf6c",
+                  "id": "66cebea6cee239664f2adf73",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -480.37,
+                          -925.39
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -504.37,
+                          -925.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          -504.37,
+                          -833.75
+                        ]
+                      },
+                      {
+                        "point": [
+                          -335.87,
+                          -833.75
+                        ]
+                      },
+                      {
+                        "point": [
+                          -335.87,
+                          -753.91
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66cebea6cee239664f2adf72"
+        },
+        "66d29e6050160441053a0efc": {
+          "type": "block",
+          "data": {
+            "name": "Offroad Step",
+            "color": "",
+            "steps": [
+              "66d29e6050160441053a0f02",
+              "66d2aa7b50160441053a0f5c",
+              "66d29e6050160441053a0f06",
+              "66d29e6050160441053a0f09"
+            ]
+          },
+          "nodeID": "66d29e6050160441053a0efc",
+          "coords": [
+            -442.9986503047419,
+            704.6784313906163
+          ]
+        },
+        "66d29e6050160441053a0efe": {
+          "type": "block",
+          "data": {
+            "name": "Contact Card QR Code",
+            "color": "#CB627B",
+            "steps": [
+              "66d29e6050160441053a0f0d",
+              "66d2aabd50160441053a0f67",
+              "66d29e6050160441053a0f10"
+            ]
+          },
+          "nodeID": "66d29e6050160441053a0efe",
+          "coords": [
+            -666.3028556084337,
+            341.4529069150939
+          ]
+        },
+        "66d29e6050160441053a0f00": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "66d29e6050160441053a0f12"
+            ]
+          },
+          "nodeID": "66d29e6050160441053a0f00",
+          "coords": [
+            -3728.3518453293377,
+            1428.5151092022868
+          ]
+        },
+        "66d29e6050160441053a0f02": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "item=JSON.stringify(last_event.payload)",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d29e6050160441053a0f04"
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "66d29e6050160441053a0f03"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f02"
+        },
+        "66d29e6050160441053a0f06": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d29e60522c72d791325d23",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d29e6050160441053a0f07"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f06"
+        },
+        "66d29e6050160441053a0f09": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "w5b03nda",
+                "name": "🔄 Start over",
+                "actions": [],
+                "intent": null
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66d29e6050160441053a0f0a"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66d29e6050160441053a0f00",
+                  "id": "66d29e6050160441053a0f0b"
+                }
+              ]
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f09"
+        },
+        "66d29e6050160441053a0f0d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d29e60522c72d791325d26",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d29e6050160441053a0f0e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f0d"
+        },
+        "66d29e6050160441053a0f10": {
+          "type": "trace",
+          "data": {
+            "name": "ext_qr",
+            "_v": 1,
+            "paths": [
+              {
+                "label": "complete",
+                "isDefault": true
+              }
+            ],
+            "payload": {
+              "name": "ext_qr",
+              "body": "{\n    \"url\": \"{last_utterance}/scan_event.html\",\n    \"queryParams\": {\n        \"session\": \"{user_id}\"\n    }\n}",
+              "bodyType": "json",
+              "scope": "local",
+              "isBlocking": true
+            },
+            "defaultPath": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66d29e6050160441053a0efc",
+                  "id": "66d29e6050160441053a0f11",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -499.8,
+                          595.43
+                        ]
+                      },
+                      {
+                        "point": [
+                          -443,
+                          595.43
+                        ]
+                      },
+                      {
+                        "point": [
+                          -443,
+                          704.68
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f10"
+        },
+        "66d29e6050160441053a0f12": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d29e6050160441053a0f12"
+        },
+        "66d2aa7b50160441053a0f5c": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d2aa7b522c72d791325d3c",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d2aa7b50160441053a0f5d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1264.3978727030315,
+                          522.6750086808573
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1240.3978727030315,
+                          522.6750086808573
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1240.3978727030315,
+                          698.6850086808573
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1420.8978727030315,
+                          698.6850086808573
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1420.8978727030315,
+                          874.7050086808573
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2aa7b50160441053a0f5c"
+        },
+        "66d2aabd50160441053a0f67": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d2aabdc8fe0d24d529e79b",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d2aabd50160441053a0f68"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2aabd50160441053a0f67"
+        },
+        "66d2ab4850160441053a0f80": {
+          "type": "markup_text",
+          "data": {
+            "scale": 1,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "This idea not working-- (\"onScan\" event fires on scanned page)"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 386,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "66d2ab4850160441053a0f80",
+          "coords": [
+            -1696.956726263622,
+            -415.90666818003336
+          ]
+        },
+        "66d2ab8850160441053a0f83": {
+          "type": "markup_text",
+          "data": {
+            "scale": 1.3202214676201491,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "left",
+                "children": [
+                  {
+                    "text": "{\n    \"url\": \"{last_utterance}/scan_event.html\",\n    \"queryParams\": {\n        \"session\": \"{user_id}\"\n    }\n}",
+                    "fontFamily": "Courier New"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 499.11497718646166,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "66d2ab8850160441053a0f83",
+          "coords": [
+            -1963.7782853532685,
+            182.33625064622277
+          ]
+        },
+        "66d2ac2050160441053a0f93": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "w5b03nda",
+                "name": "Yes",
+                "actions": [],
+                "intent": null
+              },
+              {
+                "id": "tz19j3ivd",
+                "name": "🔄 Start over",
+                "actions": [],
+                "intent": null
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66d2ac2050160441053a0f94"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66d115696477349bb7919ecf",
+                  "id": "66d2ac2050160441053a0f95",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1353.84,
+                          -110.78
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1322.8,
+                          -110.78
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1322.8,
+                          -140.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1291.76,
+                          -140.88
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "66d2ac5150160441053a0fa6",
+                  "type": "",
+                  "target": "66d2ac5850160441053a0fa9",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "66d2ac2050160441053a0f93"
+        },
+        "66d2ac2050160441053a0f97": {
+          "type": "block",
+          "data": {
+            "name": "Offroad Step copy",
+            "color": "",
+            "steps": [
+              "66d2ac2c50160441053a0fa2",
+              "66d2ac2050160441053a0f93"
+            ]
+          },
+          "nodeID": "66d2ac2050160441053a0f97",
+          "coords": [
+            -1520.3412972886256,
+            -330.25630718187443
+          ]
+        },
+        "66d2ac2c50160441053a0fa2": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d2ac2cc8fe0d24d529e885",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d2ac2c50160441053a0fa3"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2ac2c50160441053a0fa2"
+        },
+        "66d2ac5850160441053a0fa8": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2ac5850160441053a0fa8"
+        },
+        "66d2ac5850160441053a0fa9": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66d2ac5850160441053a0fa8"
+            ]
+          },
+          "nodeID": "66d2ac5850160441053a0fa9",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66d2b96e50160441053a106d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66d2b96ec8fe0d24d529edd4",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d2b96e50160441053a106e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2b96e50160441053a106d"
+        },
+        "66d2ba2150160441053a1071": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "const pattern = /^https?:\\/\\/((\\d{1,3}(\\.\\d{1,3}){3})|([a-zA-Z0-9-]+\\.[a-zA-Z]{2,}))(:\\d+)?$/;\nconst res = pattern.test(last_utterance);\n\nif (res) return 'valid'\nif (!res) return 'invalid'\n",
+            "paths": [
+              {
+                "label": "valid",
+                "key": "dq2jw3ili"
+              },
+              {
+                "label": "invalid",
+                "key": "c32ln3iq0"
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "dq2jw3ili": {
+                  "id": "66d2ba4750160441053a108d",
+                  "target": "66d29e6050160441053a0efe",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -936.5,
+                          363.15
+                        ]
+                      },
+                      {
+                        "point": [
+                          -831.3,
+                          368.45
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "c32ln3iq0": {
+                  "id": "66d2ba9a50160441053a108f",
+                  "target": "66d115696477349bb7919ecf",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1269.51,
+                          417.64
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -1315.76,
+                          417.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1315.76,
+                          -140.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1291.76,
+                          -140.88
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66d2ba2150160441053a1072",
+                  "data": {}
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "66d2ba2150160441053a1073"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d2ba2150160441053a1071"
+        },
+        "66d2ba2150160441053a1074": {
+          "type": "block",
+          "data": {
+            "name": "Check local IP",
+            "steps": [
+              "66d2ba2150160441053a1071"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "66d2ba2150160441053a1074",
+          "coords": [
+            -1103.0065720166297,
+            175.42548168946104
           ]
         }
       },
-      "offsetX": 1299.650413938825,
-      "offsetY": 1496.6898293586821,
+      "offsetX": 1755.265798554208,
+      "offsetY": 988.2282908971442,
       "modified": 1681419809,
       "creatorID": 79417,
       "variables": [],
@@ -3299,6 +3888,116 @@
   "folders": [],
   "responses": [
     {
+      "id": "66d1193205e523c5f6569740",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:58:26.000Z",
+      "updatedAt": "2024-08-30T00:58:26.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d11986a0ae310266c19f90",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:59:50.000Z",
+      "updatedAt": "2024-08-30T01:00:05.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d11acfa0ae310266c1a014",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T01:05:20.000Z",
+      "updatedAt": "2024-08-30T01:05:23.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d132a6490091890e326dc8",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T02:47:03.000Z",
+      "updatedAt": "2024-08-30T02:47:09.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d115cfa0ae310266c19dfc",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:44:00.000Z",
+      "updatedAt": "2024-08-30T00:44:08.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d116faa0ae310266c19e64",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2024-08-30T00:48:58.000Z",
+      "updatedAt": "2024-08-30T00:48:58.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d12abf490091890e326c05",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T02:13:20.000Z",
+      "updatedAt": "2024-08-30T02:13:29.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d11575a0ae310266c19dab",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:42:29.000Z",
+      "updatedAt": "2024-08-30T00:42:45.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d116ca05e523c5f6569739",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:48:11.000Z",
+      "updatedAt": "2024-08-30T00:48:11.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d1170e05e523c5f656973c",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T00:49:19.000Z",
+      "updatedAt": "2024-08-30T00:49:19.000Z",
+      "updatedByID": 79417
+    },
+    {
       "id": "66cebe9dea920600071cc1d8",
       "name": "",
       "createdByID": 79417,
@@ -3475,6 +4174,17 @@
       "updatedByID": 79417
     },
     {
+      "id": "66d14325490091890e327203",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T03:57:26.000Z",
+      "updatedAt": "2024-08-30T03:57:31.000Z",
+      "updatedByID": 79417
+    },
+    {
       "id": "66ced1ef51873fe8cbca1af7",
       "name": "",
       "createdByID": 79417,
@@ -3484,9 +4194,133 @@
       "createdAt": "2024-08-28T07:29:51.000Z",
       "updatedAt": "2024-08-28T07:29:55.000Z",
       "updatedByID": 79417
+    },
+    {
+      "id": "66d14aecbd3af557d533fcfb",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T04:30:36.000Z",
+      "updatedAt": "2024-08-30T04:30:36.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d14c65490091890e32749f",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-30T04:36:53.000Z",
+      "updatedAt": "2024-08-30T04:37:01.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d29e60522c72d791325d23",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T04:38:56.000Z",
+      "updatedAt": "2024-08-31T04:38:56.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d29e60522c72d791325d26",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T04:38:56.000Z",
+      "updatedAt": "2024-08-31T04:38:56.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2aa7b522c72d791325d3c",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T05:30:36.000Z",
+      "updatedAt": "2024-08-31T05:30:36.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2aabdc8fe0d24d529e79b",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T05:31:42.000Z",
+      "updatedAt": "2024-08-31T05:31:56.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2ac2cc8fe0d24d529e885",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T05:37:49.000Z",
+      "updatedAt": "2024-08-31T05:38:20.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2b96ec8fe0d24d529edd4",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T06:34:23.000Z",
+      "updatedAt": "2024-08-31T06:34:36.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2ba40c8fe0d24d529ee69",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T06:37:52.000Z",
+      "updatedAt": "2024-08-31T06:37:55.000Z",
+      "updatedByID": 79417
+    },
+    {
+      "id": "66d2bab4c8fe0d24d529eeb6",
+      "name": "",
+      "createdByID": 79417,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-31T06:39:48.000Z",
+      "updatedAt": "2024-08-31T06:39:51.000Z",
+      "updatedByID": 79417
     }
   ],
   "responseMessages": [
+    {
+      "id": "66d14325490091890e327205",
+      "discriminatorID": "66d14325490091890e327204",
+      "text": [
+        {
+          "text": [
+            "Here is {myVal}"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T03:57:26.000Z"
+    },
     {
       "id": "66cebe9dea920600071cc1da",
       "discriminatorID": "66cebe9dea920600071cc1d9",
@@ -3702,7 +4536,7 @@
       "text": [
         {
           "text": [
-            "Pick a demo below and open it on your phone.\n\n"
+            "📱 Pick a QR code demo below and scan it with your phone. 📷"
           ]
         }
       ],
@@ -3711,18 +4545,32 @@
       "createdAt": "2024-08-28T06:12:11.000Z"
     },
     {
-      "id": "66cec00351873fe8cbca10b3",
-      "discriminatorID": "66cec00351873fe8cbca10b2",
+      "id": "66d132a6490091890e326dca",
+      "discriminatorID": "66d132a6490091890e326dc9",
       "text": [
         {
           "text": [
-            "You ran the demo with contact card QR code, good job!"
+            "beerpath"
           ]
         }
       ],
       "condition": null,
       "delay": null,
-      "createdAt": "2024-08-28T06:13:24.000Z"
+      "createdAt": "2024-08-30T02:47:03.000Z"
+    },
+    {
+      "id": "66d14c65490091890e3274a1",
+      "discriminatorID": "66d14c65490091890e3274a0",
+      "text": [
+        {
+          "text": [
+            "form action loading..."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T04:36:53.000Z"
     },
     {
       "id": "66ced1ef51873fe8cbca1af9",
@@ -3739,6 +4587,66 @@
       "createdAt": "2024-08-28T07:29:51.000Z"
     },
     {
+      "id": "66cec00351873fe8cbca10b3",
+      "discriminatorID": "66cec00351873fe8cbca10b2",
+      "text": [
+        {
+          "text": [
+            "You ran the Basic QR code, good job!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-28T06:13:24.000Z"
+    },
+    {
+      "id": "66d2b96ec8fe0d24d529edd6",
+      "discriminatorID": "66d2b96ec8fe0d24d529edd5",
+      "text": [
+        {
+          "text": [
+            "You ran the QR code sample!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T06:34:23.000Z"
+    },
+    {
+      "id": "66d12abf490091890e326c07",
+      "discriminatorID": "66d12abf490091890e326c06",
+      "text": [
+        {
+          "text": [
+            "What is user id?? ",
+            {
+              "variableID": "user_id"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T02:13:20.000Z"
+    },
+    {
+      "id": "66d1193205e523c5f6569742",
+      "discriminatorID": "66d1193205e523c5f6569741",
+      "text": [
+        {
+          "text": [
+            "You ran the demo with contact card QR code, good job!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:58:26.000Z"
+    },
+    {
       "id": "66cfd6322a2a754a8746f0ae",
       "discriminatorID": "66cebf1151873fe8cbca1036",
       "text": [
@@ -3751,6 +4659,113 @@
       "condition": null,
       "delay": null,
       "createdAt": "2024-08-29T02:00:18.000Z"
+    },
+    {
+      "id": "66d11986a0ae310266c19f92",
+      "discriminatorID": "66d11986a0ae310266c19f91",
+      "text": [
+        {
+          "text": [
+            "We \"stopped\" the conversation waiting for that scan to complete and now it completed"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:59:50.000Z"
+    },
+    {
+      "id": "66d11acfa0ae310266c1a016",
+      "discriminatorID": "66d11acfa0ae310266c1a015",
+      "text": [
+        {
+          "text": [
+            "Yay"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T01:05:20.000Z"
+    },
+    {
+      "id": "66d116ca05e523c5f656973b",
+      "discriminatorID": "66d116ca05e523c5f656973a",
+      "text": [
+        {
+          "text": [
+            "You ran the demo with contact card QR code, good job!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:48:11.000Z"
+    },
+    {
+      "id": "66d2ba40c8fe0d24d529ee6b",
+      "discriminatorID": "66d2ba40c8fe0d24d529ee6a",
+      "text": [
+        {
+          "text": [
+            "default"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T06:37:52.000Z"
+    },
+    {
+      "id": "66d1170e05e523c5f656973e",
+      "discriminatorID": "66d1170e05e523c5f656973d",
+      "text": [
+        {
+          "text": [
+            "What is your machine's public-facing IP? (it'll look like this  ",
+            {
+              "text": [
+                {
+                  "text": [
+                    "http://192.168.1.19:1337)"
+                  ],
+                  "attributes": {
+                    "color": {
+                      "a": 1,
+                      "b": 255,
+                      "g": 125,
+                      "r": 57
+                    },
+                    "__type": "text"
+                  }
+                }
+              ],
+              "attributes": {
+                "url": "http://192.168.1.19:1337",
+                "__type": "link"
+              }
+            },
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:49:19.000Z"
+    },
+    {
+      "id": "66d2bab4c8fe0d24d529eeb8",
+      "discriminatorID": "66d2bab4c8fe0d24d529eeb7",
+      "text": [
+        {
+          "text": [
+            "booo"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T06:39:48.000Z"
     },
     {
       "id": "66cebf1151873fe8cbca1037",
@@ -3789,9 +4804,195 @@
       "condition": null,
       "delay": null,
       "createdAt": "2024-08-28T06:11:25.000Z"
+    },
+    {
+      "id": "66d11575a0ae310266c19dad",
+      "discriminatorID": "66d11575a0ae310266c19dac",
+      "text": [
+        {
+          "text": [
+            "What is your machine’s local IP address? (e.g., http://192.168.1.19:1337)"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:42:29.000Z"
+    },
+    {
+      "id": "66d115cfa0ae310266c19dfe",
+      "discriminatorID": "66d115cfa0ae310266c19dfd",
+      "text": [
+        {
+          "text": [
+            "Passes ",
+            {
+              "variableID": "last_utterance"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:44:00.000Z"
+    },
+    {
+      "id": "66d116faa0ae310266c19e66",
+      "discriminatorID": "66d116faa0ae310266c19e65",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T00:48:58.000Z"
+    },
+    {
+      "id": "66d14aecbd3af557d533fcfd",
+      "discriminatorID": "66d14aecbd3af557d533fcfc",
+      "text": [
+        {
+          "text": [
+            "You ran the form demo ",
+            {
+              "variableID": "66d14b39490091890e327424"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-30T04:30:36.000Z"
+    },
+    {
+      "id": "66d29e60522c72d791325d25",
+      "discriminatorID": "66d29e60522c72d791325d24",
+      "text": [
+        {
+          "text": [
+            "You ran the scan demo and here is the data ",
+            {
+              "variableID": "66d14b39490091890e327424"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T04:38:56.000Z"
+    },
+    {
+      "id": "66d29e60522c72d791325d28",
+      "discriminatorID": "66d29e60522c72d791325d27",
+      "text": [
+        {
+          "text": [
+            "QR Code OnScan"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T04:38:56.000Z"
+    },
+    {
+      "id": "66d2aa7b522c72d791325d3e",
+      "discriminatorID": "66d2aa7b522c72d791325d3d",
+      "text": [
+        {
+          "text": [
+            "We \"stopped\" the conversation waiting for that scan to complete and now it completed"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T05:30:36.000Z"
+    },
+    {
+      "id": "66d2aabdc8fe0d24d529e79d",
+      "discriminatorID": "66d2aabdc8fe0d24d529e79c",
+      "text": [
+        {
+          "text": [
+            "[debug] ",
+            {
+              "variableID": "last_utterance"
+            },
+            " /",
+            {
+              "variableID": "user_id"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T05:31:42.000Z"
+    },
+    {
+      "id": "66d2ac2cc8fe0d24d529e887",
+      "discriminatorID": "66d2ac2cc8fe0d24d529e886",
+      "text": [
+        {
+          "text": [
+            {
+              "text": [
+                "⚠️ Warning: "
+              ],
+              "attributes": {
+                "__type": "text",
+                "underline": true,
+                "fontWeight": "700"
+              }
+            },
+            "The \"onScan\" sample may not work, and your phone must be on the same Wi-Fi network as your machine. Do you still want to continue?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-31T05:37:49.000Z"
     }
   ],
   "responseDiscriminators": [
+    {
+      "id": "66d14325490091890e327204",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d14325490091890e327203",
+      "variantOrder": [
+        "66d14325490091890e327205"
+      ],
+      "createdAt": "2024-08-30T03:57:26.000Z"
+    },
+    {
+      "id": "66d14aecbd3af557d533fcfc",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d14aecbd3af557d533fcfb",
+      "variantOrder": [
+        "66d14aecbd3af557d533fcfd"
+      ],
+      "createdAt": "2024-08-30T04:30:36.000Z"
+    },
+    {
+      "id": "66d14c65490091890e3274a0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d14c65490091890e32749f",
+      "variantOrder": [
+        "66d14c65490091890e3274a1"
+      ],
+      "createdAt": "2024-08-30T04:36:53.000Z"
+    },
     {
       "id": "66ced1ef51873fe8cbca1af8",
       "channel": "default",
@@ -3962,9 +5163,204 @@
         "66cfd6322a2a754a8746f0ae"
       ],
       "createdAt": "2024-08-28T06:09:22.000Z"
+    },
+    {
+      "id": "66d115cfa0ae310266c19dfd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d115cfa0ae310266c19dfc",
+      "variantOrder": [
+        "66d115cfa0ae310266c19dfe"
+      ],
+      "createdAt": "2024-08-30T00:44:00.000Z"
+    },
+    {
+      "id": "66d116faa0ae310266c19e65",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d116faa0ae310266c19e64",
+      "variantOrder": [
+        "66d116faa0ae310266c19e66"
+      ],
+      "createdAt": "2024-08-30T00:48:58.000Z"
+    },
+    {
+      "id": "66d11575a0ae310266c19dac",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d11575a0ae310266c19dab",
+      "variantOrder": [
+        "66d11575a0ae310266c19dad"
+      ],
+      "createdAt": "2024-08-30T00:42:29.000Z"
+    },
+    {
+      "id": "66d116ca05e523c5f656973a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d116ca05e523c5f6569739",
+      "variantOrder": [
+        "66d116ca05e523c5f656973b"
+      ],
+      "createdAt": "2024-08-30T00:48:11.000Z"
+    },
+    {
+      "id": "66d1170e05e523c5f656973d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d1170e05e523c5f656973c",
+      "variantOrder": [
+        "66d1170e05e523c5f656973e"
+      ],
+      "createdAt": "2024-08-30T00:49:19.000Z"
+    },
+    {
+      "id": "66d1193205e523c5f6569741",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d1193205e523c5f6569740",
+      "variantOrder": [
+        "66d1193205e523c5f6569742"
+      ],
+      "createdAt": "2024-08-30T00:58:26.000Z"
+    },
+    {
+      "id": "66d11986a0ae310266c19f91",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d11986a0ae310266c19f90",
+      "variantOrder": [
+        "66d11986a0ae310266c19f92"
+      ],
+      "createdAt": "2024-08-30T00:59:50.000Z"
+    },
+    {
+      "id": "66d11acfa0ae310266c1a015",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d11acfa0ae310266c1a014",
+      "variantOrder": [
+        "66d11acfa0ae310266c1a016"
+      ],
+      "createdAt": "2024-08-30T01:05:20.000Z"
+    },
+    {
+      "id": "66d12abf490091890e326c06",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d12abf490091890e326c05",
+      "variantOrder": [
+        "66d12abf490091890e326c07"
+      ],
+      "createdAt": "2024-08-30T02:13:20.000Z"
+    },
+    {
+      "id": "66d132a6490091890e326dc9",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d132a6490091890e326dc8",
+      "variantOrder": [
+        "66d132a6490091890e326dca"
+      ],
+      "createdAt": "2024-08-30T02:47:03.000Z"
+    },
+    {
+      "id": "66d29e60522c72d791325d24",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d29e60522c72d791325d23",
+      "variantOrder": [
+        "66d29e60522c72d791325d25"
+      ],
+      "createdAt": "2024-08-31T04:38:56.000Z"
+    },
+    {
+      "id": "66d29e60522c72d791325d27",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d29e60522c72d791325d26",
+      "variantOrder": [
+        "66d29e60522c72d791325d28"
+      ],
+      "createdAt": "2024-08-31T04:38:56.000Z"
+    },
+    {
+      "id": "66d2aa7b522c72d791325d3d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2aa7b522c72d791325d3c",
+      "variantOrder": [
+        "66d2aa7b522c72d791325d3e"
+      ],
+      "createdAt": "2024-08-31T05:30:36.000Z"
+    },
+    {
+      "id": "66d2aabdc8fe0d24d529e79c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2aabdc8fe0d24d529e79b",
+      "variantOrder": [
+        "66d2aabdc8fe0d24d529e79d"
+      ],
+      "createdAt": "2024-08-31T05:31:42.000Z"
+    },
+    {
+      "id": "66d2ac2cc8fe0d24d529e886",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2ac2cc8fe0d24d529e885",
+      "variantOrder": [
+        "66d2ac2cc8fe0d24d529e887"
+      ],
+      "createdAt": "2024-08-31T05:37:49.000Z"
+    },
+    {
+      "id": "66d2b96ec8fe0d24d529edd5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2b96ec8fe0d24d529edd4",
+      "variantOrder": [
+        "66d2b96ec8fe0d24d529edd6"
+      ],
+      "createdAt": "2024-08-31T06:34:23.000Z"
+    },
+    {
+      "id": "66d2ba40c8fe0d24d529ee6a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2ba40c8fe0d24d529ee69",
+      "variantOrder": [
+        "66d2ba40c8fe0d24d529ee6b"
+      ],
+      "createdAt": "2024-08-31T06:37:52.000Z"
+    },
+    {
+      "id": "66d2bab4c8fe0d24d529eeb7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66d2bab4c8fe0d24d529eeb6",
+      "variantOrder": [
+        "66d2bab4c8fe0d24d529eeb8"
+      ],
+      "createdAt": "2024-08-31T06:39:48.000Z"
     }
   ],
   "variables": [
+    {
+      "id": "66d14b39490091890e327424",
+      "name": "item",
+      "createdByID": 79417,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-08-30T04:31:54.000Z",
+      "updatedAt": "2024-08-30T04:31:54.000Z",
+      "updatedByID": 79417
+    },
     {
       "id": "sessions",
       "name": "sessions",
@@ -4128,7 +5524,7 @@
       "assigneeID": null,
       "description": null,
       "createdAt": "2024-08-28T06:07:25.000Z",
-      "updatedAt": "2024-08-29T02:02:57.000Z",
+      "updatedAt": "2024-08-31T06:52:00.000Z",
       "updatedByID": 79417
     }
   ],
@@ -4157,8 +5553,8 @@
     "aiAssistSettings": {
       "aiPlayground": true
     },
-    "_id": "66cebe9d51873fe8cbca0ff2",
-    "updatedAt": "2024-08-29T02:08:39.579Z",
+    "_id": "12345678910112",
+    "updatedAt": "2024-08-31T06:51:14.127Z",
     "knowledgeBase": {
       "settings": {
         "summarization": {
